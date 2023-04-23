@@ -19,26 +19,28 @@
       <form id="survey-form">
         <ol>
           <li>
-            <label> About you: </label>
-            <fieldset>
+            <label class="italic"> About you </label>
+            <fieldset class="about">
               <label for="name"
-                >Name: <input id="name" name="name" type="text" required
+                >Name <input id="name" name="name" type="text" required
               /></label>
               <label for="age"
-                >Age (optional): <input id="age" name="age" type="number"
+                >Age (optional) <input id="age" name="age" type="number"
               /></label>
               <label for="email"
-                >Email: <input id="email" name="email" type="email" required
+                >Email <input id="email" name="email" type="email" required
               /></label>
               <label for="occupation">
-                Occupation:
+                Occupation
                 <input id="occupation" name="occupation" type="text" />
               </label>
             </fieldset>
           </li>
 
           <li>
-            <label>Which of our social media accounts do you follow?</label>
+            <label class="italic"
+              >Which of our social media accounts do you follow?</label
+            >
             <fieldset>
               <label for="instagram">
                 <input id="instagram" type="checkbox" required name="media" />
@@ -68,7 +70,7 @@
           </li>
 
           <li>
-            <label> How did you come across our website? </label>
+            <label class="italic"> How did you come across our website? </label>
             <fieldset>
               <label for="search-engine"
                 ><input
@@ -90,12 +92,12 @@
                 ><input id="other" type="radio" name="website-traffic" /> Other
                 (please specify):</label
               >
-              <textarea id="other" name="other" rows="3" cols="30"> </textarea>
+              <textarea id="other" name="other" rows="5"> </textarea>
             </fieldset>
           </li>
 
           <li>
-            <label>
+            <label class="italic">
               Overall, how satisfied are you with our website?
               <fieldset>
                 <select id="satisifaction-rating" name="satisifaction-rating">
@@ -111,7 +113,7 @@
           </li>
 
           <li>
-            <label>
+            <label class="italic">
               Did you find the navigation menu on the homepage user friendly?
             </label>
             <fieldset>
@@ -127,22 +129,23 @@
           </li>
 
           <li>
-            <label>
+            <label class="italic">
               If no, please suggest any changes that you would like to see
             </label>
             <fieldset>
               <textarea
                 id="changes"
                 name="changes"
-                rows="3"
-                cols="30"
+                rows="5"
                 placeholder="I would..."
               ></textarea>
             </fieldset>
           </li>
 
           <li>
-            <label> Did you experience any issues with the site? </label>
+            <label class="italic">
+              Did you experience any issues with the site?
+            </label>
             <fieldset>
               <label for="experience-yes"
                 ><input
@@ -164,32 +167,26 @@
           </li>
 
           <li>
-            <label>
+            <label class="italic">
               If yes, please elaborate on the issues you came across
             </label>
             <fieldset>
               <textarea
                 id="issues"
                 name="issues"
-                rows="3"
-                cols="30"
+                rows="5"
                 placeholder="I found..."
               ></textarea>
             </fieldset>
           </li>
 
           <li>
-            <label>
+            <label class="italic">
               Are there any additional features you would like to see on the
               website? If so, please details them below
             </label>
             <fieldset>
-              <textarea
-                id="features"
-                name="features"
-                rows="3"
-                cols="30"
-              ></textarea>
+              <textarea id="features" name="features" rows="5"></textarea>
             </fieldset>
           </li>
         </ol>

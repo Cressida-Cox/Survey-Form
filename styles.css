@@ -1,0 +1,77 @@
+body {
+  background-color: #272746;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 18px;
+}
+
+::marker {
+  font-size: 18px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+  padding: 10px 0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  padding: 2px 0;
+}
+
+.about input {
+  margin: 10px 0 15px 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+select {
+  width: 100%;
+  min-height: 2.5em;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 15px;
+  min-width: 300px;
+}
+
+ol {
+  margin-bottom: 60px;
+}
