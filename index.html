@@ -21,18 +21,42 @@
           <li>
             <label class="italic"> About you </label>
             <fieldset class="about">
-              <label for="name"
-                >Name <input id="name" name="name" type="text" required
+              <label id="name-label" for="name"
+                >Name
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  required
               /></label>
-              <label for="age"
-                >Age (optional) <input id="age" name="age" type="number"
+              <label id="number-label" for="number"
+                >Age (optional)
+                <input
+                  id="number"
+                  name="age"
+                  type="number"
+                  min="10"
+                  max="120"
+                  placeholder="Your age"
               /></label>
-              <label for="email"
-                >Email <input id="email" name="email" type="email" required
+              <label id="email-label" for="email"
+                >Email
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                  required
               /></label>
               <label for="occupation">
                 Occupation
-                <input id="occupation" name="occupation" type="text" />
+                <input
+                  id="occupation"
+                  name="occupation"
+                  type="text"
+                  placeholder="Your occupation"
+                />
               </label>
             </fieldset>
           </li>
@@ -43,27 +67,63 @@
             >
             <fieldset>
               <label for="instagram">
-                <input id="instagram" type="checkbox" required name="media" />
+                <input
+                  id="instagram"
+                  type="checkbox"
+                  value="instagram"
+                  required
+                  name="media"
+                />
                 Instagram
               </label>
               <label for="facebook">
-                <input id="facebook" type="checkbox" required name="media" />
+                <input
+                  id="facebook"
+                  type="checkbox"
+                  value="facebook"
+                  required
+                  name="media"
+                />
                 Facebook
               </label>
               <label for="twitter">
-                <input id="twitter" type="checkbox" required name="media" />
+                <input
+                  id="twitter"
+                  type="checkbox"
+                  value="twitter"
+                  required
+                  name="media"
+                />
                 Twitter
               </label>
               <label for="linkedin">
-                <input id="linkedin" type="checkbox" required name="media" />
+                <input
+                  id="linkedin"
+                  type="checkbox"
+                  value="linkedin"
+                  required
+                  name="media"
+                />
                 LinkedIn
               </label>
               <label for="tiktok">
-                <input id="tiktok" type="checkbox" required name="media" />
+                <input
+                  id="tiktok"
+                  type="checkbox"
+                  value="tiktok"
+                  required
+                  name="media"
+                />
                 TikTok
               </label>
               <label for="other">
-                <input id="other" type="checkbox" required name="media" />
+                <input
+                  id="other"
+                  type="checkbox"
+                  value="other"
+                  required
+                  name="media"
+                />
                 Other
               </label>
             </fieldset>
@@ -76,21 +136,37 @@
                 ><input
                   id="search-engine"
                   type="radio"
+                  value="search"
                   name="website-traffic"
                 />
                 Search Engine</label
               >
               <label for="social-media"
-                ><input id="social-media" type="radio" name="website-traffic" />
+                ><input
+                  id="social-media"
+                  type="radio"
+                  value="social"
+                  name="website-traffic"
+                />
                 Social Media Network Site</label
               >
               <label for="advert"
-                ><input id="advert" type="radio" name="website-traffic" />
+                ><input
+                  id="advert"
+                  type="radio"
+                  value="advert"
+                  name="website-traffic"
+                />
                 Online Advert</label
               >
               <label for="other"
-                ><input id="other" type="radio" name="website-traffic" /> Other
-                (please specify):</label
+                ><input
+                  id="other"
+                  type="radio"
+                  value="other"
+                  name="website-traffic"
+                />
+                Other (please specify):</label
               >
               <textarea id="other" name="other" rows="5"> </textarea>
             </fieldset>
@@ -100,7 +176,7 @@
             <label class="italic">
               Overall, how satisfied are you with our website?
               <fieldset>
-                <select id="satisifaction-rating" name="satisifaction-rating">
+                <select id="dropdown" name="satisifaction-rating">
                   <option value="">(Select One)</option>
                   <option value="1">Very Satisfied</option>
                   <option value="2">Satisfied</option>
@@ -118,11 +194,21 @@
             </label>
             <fieldset>
               <label for="menu-yes"
-                ><input id="menu-yes" type="radio" name="user-friendly-menu" />
+                ><input
+                  id="menu-yes"
+                  type="radio"
+                  value="yes"
+                  name="user-friendly-menu"
+                />
                 Yes</label
               >
               <label for="menu-no"
-                ><input id="menu-no" type="radio" name="user-friendly-menu" />
+                ><input
+                  id="menu-no"
+                  type="radio"
+                  value="no"
+                  name="user-friendly-menu"
+                />
                 No</label
               >
             </fieldset>
@@ -151,6 +237,7 @@
                 ><input
                   id="experience-yes"
                   type="radio"
+                  value="yes"
                   name="user-friendly-menu"
                 />
                 Yes</label
@@ -159,6 +246,7 @@
                 ><input
                   id="experience-no"
                   type="radio"
+                  value="no"
                   name="user-friendly-menu"
                 />
                 No</label
@@ -190,7 +278,7 @@
             </fieldset>
           </li>
         </ol>
-        <input type="submit" value="Submit" />
+        <input id="submit" type="submit" value="Submit" />
       </form>
     </div>
   </body>
